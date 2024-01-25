@@ -1,0 +1,20 @@
+{
+  "name": "ts",
+  "version": "1.0.0",
+  "description": "leetcode 150 typescript",
+  "main": "",
+  "type": "module",
+  "scripts": {
+    "build": "tsc *.ts",
+    "test": "npm run build && (jest *.js && rm ./*.js) || rm ./*.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.7.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.11",
+    "typescript": "^5.3.3"
+  }
+}
