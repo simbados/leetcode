@@ -5,3 +5,5 @@ fn main() {
 }
 mod word_pattern_209;
 mod add_binary_67;
+mod max_depth_binary104;
+
