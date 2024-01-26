@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "leet code 150 javascript",
   "main": "26RemoveDuplicates.js",
+  "type": "module",
   "scripts": {
     "test": "jest"
   },
