@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"slices"
 	"testing"
 )
@@ -20,7 +19,6 @@ func TestRotateArray(t *testing.T) {
 	for _, tt := range tests {
 		clone := slices.Clone(tt.a)
 		rotate(tt.a, tt.b)
-		fmt.Println(tt.a, tt.b, clone, tt.expected)
 		if !slices.Equal(tt.a, tt.expected) {
 			t.Errorf("rotate(%v, %v) = %v; but got %v", clone, tt.b, tt.expected, tt.a)
 		}

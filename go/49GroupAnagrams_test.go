@@ -21,9 +21,16 @@ func TestGroupAnagrams(t *testing.T) {
 		res := groupAnagrams(tt.a)
 		if len(res) != len(tt.expected) {
 			errorMessage(t, tt.a, tt.expected, res)
+			continue
 		}
-		for index, val := range res {
-			if !slices.Equal(tt.expected[index], val) {
+		for _, val := range res {
+			found := false
+			for _, val2 := range tt.expected {
+				if slices.Equal(val2, val) {
+					found = true
+				}
+			}
+			if !found {
 				errorMessage(t, tt.a, tt.expected, res)
 			}
 		}
