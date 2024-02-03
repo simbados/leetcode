@@ -1,9 +1,9 @@
 package main
 
 type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
+	Val   int       `json:"Val"`
+	Left  *TreeNode `json:"Left"`
+	Right *TreeNode `json:"Right"`
 }
 
 func isSameTree(p *TreeNode, q *TreeNode) bool {
