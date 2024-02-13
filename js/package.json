@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "leet code 150 javascript",
   "main": "26RemoveDuplicates.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
-    "test": "jest"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,5 +14,8 @@
   },
   "devDependencies": {
     "@types/jest": "^29.5.11"
+  },
+  "jest": {
+    "transform": { }
   }
 }
