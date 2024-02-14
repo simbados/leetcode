@@ -14,7 +14,7 @@ func TestSingleNumberII(t *testing.T) {
 	}
 
 	for _, tt := range tests {
-		result := singleNumberII(tt.a)
+		result := singleNumber2(tt.a)
 		if result != tt.expected {
 			t.Errorf("maxPoints(%v) = %v; but got %v", tt.a, tt.expected, result)
 		}
