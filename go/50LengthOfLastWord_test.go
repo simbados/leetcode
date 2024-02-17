@@ -17,7 +17,7 @@ func TestLengthOfLastWord(t *testing.T) {
 	for _, tt := range tests {
 		res := lengthOfLastWord(tt.a)
 		if res != tt.expected {
-			t.Errorf("canJump(%v) = %v; but got %v", tt.a, tt.expected, res)
+			t.Errorf("lengthOfLastWord(%v) = %v; but got %v", tt.a, tt.expected, res)
 		}
 	}
 }
