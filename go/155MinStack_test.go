@@ -5,7 +5,7 @@ import (
 )
 
 func TestMinStack(t *testing.T) {
-	a := Constructor()
+	a := Constructor2()
 	a.Push(1)
 	a.Push(2)
 
