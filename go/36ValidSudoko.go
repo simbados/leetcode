@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 type KeyVal [10]byte
 
 func isValidSudoku(board [][]byte) bool {
@@ -30,7 +28,6 @@ func isValidSudoku(board [][]byte) bool {
 			}
 		}
 	}
-	fmt.Println(columnMap)
 	return true
 }
 

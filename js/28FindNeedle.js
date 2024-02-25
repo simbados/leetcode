@@ -1,5 +1,5 @@
 var strStr = function(haystack, needle) {
-    count = 0
+    let count = 0
     while (!haystack.startsWith(needle) && haystack.length > 0) {
         haystack = haystack.substring(1)
         count++

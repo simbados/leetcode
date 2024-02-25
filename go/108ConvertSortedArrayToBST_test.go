@@ -1,8 +1,6 @@
 package main
 
 import (
-	"encoding/json"
-	"fmt"
 	"testing"
 )
 
@@ -23,10 +21,6 @@ func TestConvertSortedArray(t *testing.T) {
 		res := sortedArrayToBST(tt.a)
 		same := isSameTree(res, tt.expected)
 		if !same {
-			prettyJson, _ := json.MarshalIndent(tt.expected, "", "    ")
-			fmt.Println(string(prettyJson))
-			prettyJson2, _ := json.MarshalIndent(res, "", "    ")
-			fmt.Println(string(prettyJson2))
 			t.Errorf("sortedArrayToBST(%v) = %v; but got %v", tt.a, tt.expected, res)
 		}
 	}
