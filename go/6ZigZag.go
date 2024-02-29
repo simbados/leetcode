@@ -1,6 +1,9 @@
 package main
 
 func convert(s string, numRows int) string {
+  if len(s) == 1  || numRows == 1 {
+    return s
+  }
 	result := ""
 	multi := 2
 	for i := 0; i < numRows; i++ {

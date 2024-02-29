@@ -19,6 +19,7 @@ func TestZigZag(t *testing.T) {
     {"PAYPALISHIRING", 3, "PAHNAPLSIIGYIR"},
     {"PAYPALISHIRING", 4, "PINALSIGYAHRPI"},
     {"HELLOTHISISMARIO", 5, "HSEIIOLHSILTMROA"},
+    {"A", 1, "A"},
 	}
 
 	for _, tt := range tests {
